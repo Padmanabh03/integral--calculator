@@ -1,0 +1,92 @@
+body
+{
+	text-align:center;
+
+	font-family: 'Literata', serif;
+}
+h1
+{
+	color: #021526;
+	text-shadow: 0 0 3px #022340;
+	font-family: 'Sacramento', cursive;
+	font-size: 60px;
+	height: 30px;
+	margin-top: 10px;
+}
+h2
+{
+	color: #011126;
+}
+p
+{
+	line-height: 2;
+}
+
+a
+{
+	text-decoration-line: none;
+	color: #11999E;
+	margin: 30px;
+}
+.top-container
+{
+    padding:25px;
+    background: #EFFCFF;
+    background: -webkit-linear-gradient(top, #EFFCFF, #67CED9);
+    background: -moz-linear-gradient(top, #EFFCFF, #67CED9);
+    background: linear-gradient(to bottom, #EFFCFF, #67CED9);
+}
+.bottom-container
+{
+	/*background-color: #C9FFD5;*/
+    background: #67CED9;
+    background: -webkit-linear-gradient(top, #67CED9, #EFFCFF);
+    background: -moz-linear-gradient(top, #67CED9, #EFFCFF);
+    background: linear-gradient(to bottom, #67CED9, #EFFCFF);
+	padding: 50px 0 20px;
+}
+.Social-media
+{
+	margin-top: 0;
+	padding:0 0 30px;
+}
+#linkedin:hover
+{
+	background-color: white;
+}
+#twitter:hover
+{
+	background-color: white;
+}
+#github:hover
+{
+	background: white;
+}
+.button
+{
+  background: #C9FFD5;
+  background-image: -webkit-linear-gradient(top, #C9FFD5, #74CEB7);
+  background-image: -moz-linear-gradient(top, #C9FFD5, #74CEB7);
+  background-image: -ms-linear-gradient(top, #C9FFD5, #74CEB7);
+  background-image: -o-linear-gradient(top, #C9FFD5, #74CEB7);
+  background-image: linear-gradient(to bottom, #C9FFD5, #74CEB7);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Literata', serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button:hover
+{
+  background: #032859;
+  background-image: -webkit-linear-gradient(top, #032859, #011C40);
+  background-image: -moz-linear-gradient(top, #032859, #011C40);
+  background-image: -ms-linear-gradient(top, #032859, #011C40);
+  background-image: -o-linear-gradient(top, #032859, #011C40);
+  background-image: linear-gradient(to bottom, #032859, #011C40);
+  text-decoration: none;
+}

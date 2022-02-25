@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/Padmanabh03/Images/main/favicon.ico">
+    <title>Integral-Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Literata:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-container">
+        <h1>Definite Integral</h1>
+        <br><br>
+        <br><br>
+        <form action="/" method="POST">
+            <input type="text" name="upper-bound" placeholder="upper-bound" value="{{b}}">
+            <br>
+            <img src="https://raw.githubusercontent.com/Padmanabh03/Images/main/LogoMakr-3cnnng.png" >
+            <input type="text" name="function" id="function" placeholder="function in x" value="{{fun}}">
+            <label for="function">dx</label>
+            <br>
+            <input type="text" name="lower-bound" placeholder="lower-bound" value="{{a}}">
+            <br>
+            <br>
+            <button type="submit" value="submit" class="button">Integrate</button>
+        </form>
+    </div>
+    <br>
+    {% if z==0 %}
+        <p><h3>Integration of {{fun}} from {{a}} to {{b}} is <b> 0 </b></h3></p>
+    {% else %}
+        <p><h3>Integration of {{fun}} from {{a}} to {{b}} is <b> {{z}} </b></h3></p>
+    {% endif %}
+    <br>
+    <div class="bottom-container">
+	    <h2 class="Social-media">My Social media accounts.</h2>
+            <a class="footer-link" href="https://www.linkedin.com/in/padmanabh-butala-b020ba1a0/">
+            <i class="fa fa-linkedin" style="font-size: 32px;color:#0e76a8" id="linkedin"></i></a>
+            <a class="footer-link" href="https://twitter.com/ButalaPadmanabh">
+            <i class="fa fa-twitter" style="font-size: 32px;color:#1DA1F2" id="twitter"></i></a>
+            <a class="footer-link" href="https://github.com/Padmanabh03">
+            <i class="fa fa-github" style="font-size: 32px;color:#211F1F" id="github"></i></a>
+            <br>
+            <br>
+        <p>© 2022 Padmanabh Butala.All rights reserved.</p>
+    </div>
+</body>
+</html>
